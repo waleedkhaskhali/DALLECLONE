@@ -1,4 +1,15 @@
-const FormField = ({
+interface ComponentAProps {
+  labelName: string;
+  type: string;
+  name: string;
+  placeholder: string;
+  value: string;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  isSurpriseMe: any; // Change the type according to your requirements
+  handleSurpriseMe: any; // Change the type according to your requirements
+}
+
+const FormField: React.FC<ComponentAProps> = ({
   labelName,
   type,
   name,
