@@ -5,8 +5,8 @@ interface ComponentAProps {
   placeholder: string;
   value: string;
   handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  isSurpriseMe: any; // Change the type according to your requirements
-  handleSurpriseMe: any; // Change the type according to your requirements
+  isSurpriseMe: boolean; // Change the type according to your requirements
+  handleSurpriseMe: () => void; // Change the type according to your requirements
 }
 
 const FormField: React.FC<ComponentAProps> = ({
